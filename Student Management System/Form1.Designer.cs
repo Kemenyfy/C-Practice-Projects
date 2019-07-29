@@ -61,12 +61,14 @@
             this.addStudentToolStripMenuItem.Name = "addStudentToolStripMenuItem";
             this.addStudentToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addStudentToolStripMenuItem.Text = "Add Student";
+            this.addStudentToolStripMenuItem.Click += new System.EventHandler(this.AddStudentToolStripMenuItem_Click);
             // 
             // logToolStripMenuItem
             // 
             this.logToolStripMenuItem.Name = "logToolStripMenuItem";
             this.logToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.logToolStripMenuItem.Text = "Logout";
+            this.logToolStripMenuItem.Click += new System.EventHandler(this.LogToolStripMenuItem_Click);
             // 
             // Form1
             // 

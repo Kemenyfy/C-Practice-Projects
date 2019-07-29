@@ -21,5 +21,16 @@ namespace Student_Management_System
         {
 
         }
+
+        private void AddStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StudentInfo student = new StudentInfo();
+            student.Show();
+        }
+
+        private void LogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
