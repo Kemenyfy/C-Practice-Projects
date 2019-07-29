@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Student_Management_System
 {
-    public partial class Form1 : Form
+    public partial class StudentInfo : Form
     {
-        public Form1()
+        public StudentInfo()
         {
             InitializeComponent();
         }
 
-        private void HoneToolStripMenuItem_Click(object sender, EventArgs e)
+        private void StudentInfo_Load(object sender, EventArgs e)
         {
 
         }
