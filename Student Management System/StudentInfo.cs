@@ -38,5 +38,18 @@ namespace Student_Management_System
             MessageBox.Show("Student Added Successfully");
             connection.Close();
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            SqlCommand cmd = new SqlCommand(@"UPDATE STUDENT_INFO SET STUDENT_NAME=@name, ADDRESS=@address, CLASS=@class WHERE STUDENT_ID=@id", connection);
+            cmd.Parameters.AddWithValue("@id", textBox1.Text);
+            cmd.Parameters.AddWithValue("@name", textBox2.Text);
+            cmd.Parameters.AddWithValue("@address", textBox3.Text);
+            cmd.Parameters.AddWithValue("@class", textBox4.Text);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Student Updated Successfully");
+            connection.Close();
+        }
     }
 }
