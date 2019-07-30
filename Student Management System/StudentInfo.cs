@@ -51,5 +51,15 @@ namespace Student_Management_System
             MessageBox.Show("Student Updated Successfully");
             connection.Close();
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            SqlCommand cmd = new SqlCommand(@"DELETE STUDENT_INFO WHERE STUDENT_ID=@id", connection);
+            cmd.Parameters.AddWithValue("@id", textBox1.Text);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Student Deleted Successfully");
+            connection.Close();
+        }
     }
 }
